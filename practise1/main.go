@@ -1,56 +1,24 @@
 package main
 
-import (
-	"fmt"
-	"golang.org/x/example/hello/reverse"
-	"rsc.io/quote"
-)
+import "fmt"
 
-func Hello1(name string, age int) string {
-	// message := fmt.Sprintf("Hello Mr/Ms :  %v. with age %d",name,age)
-	message := fmt.Sprintf("Hello Mr/Ms :  %s. with age %d", name, age)
-	return message
+func main(){
+	var name = "faizan alam";
+	var age int = 22;
+	var height = 5.434;
+	fmt.Printf("The Name of the User %s and height %.2f with the age is %d \n ",name,height,age)
 }
-
-func main() {
-	fmt.Println("Welcome to GO programming")
-	fmt.Println(quote.Go())
-	fmt.Println("==========================================")
-	fmt.Println(Hello1("faizan", 22))
-	fmt.Println("==========================================")
-	fmt.Println(reverse.String("faizan"))
-}
-
-// CLI Commands
-// go mod tidy
-// go mod init myLearning
-// go get golang.org/x/example/hello/reverse
-
-
-// Formet Specifer
-// Type				Format Specifier	Example Usage
-// String				%s					fmt.Sprintf("%s", "Hello")
-// Integer				%d					fmt.Sprintf("%d", 123)
-// Floating Point		%f					fmt.Sprintf("%f", 3.14)
-// Boolean				%t					fmt.Sprintf("%t", true)
-// Hexadecimal			%x					fmt.Sprintf("%x", 255)
-// Character			%c					fmt.Sprintf("%c", 65)
-// Pointer				%p					fmt.Sprintf("%p", &var)
-// Scientific Notation	%e					fmt.Sprintf("%e", 12345.6789)
-// package main
-
-// import "fmt"
-
 // func main() {
-//     name := "John"
-//     age := 30
-//     salary := 75000.50
-//     isActive := true
+// 	var name string = "faizan alam";
+// 	var age int = 22;
+// 	// var exp int = "22";	// shows error - type error
 
-//     // Using different format specifiers
-//     fmt.Printf("Name: %s\n", name)           // String
-//     fmt.Printf("Age: %d\n", age)             // Integer
-//     fmt.Printf("Salary: %.2f\n", salary)     // Floating-point with 2 decimal precision
-//     fmt.Printf("Is Active: %t\n", isActive)  // Boolean
-//     fmt.Printf("Age in Hex: %x\n", age)      // Hexadecimal (not commonly used for age)
+// 	var isstudent bool = true;
+
+// 	const pi = 3.14
+// 	fmt.Println(pi)
+
+// 	age1 := 23;
+// 	fmt.Println(age1)
+// 	fmt.Println("Hello", name,isstudent,age)
 // }

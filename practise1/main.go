@@ -1,24 +1,64 @@
 package main
 
+// Error Handling in Go
 import "fmt"
 
-func main(){
-	var name = "faizan alam";
-	var age int = 22;
-	var height = 5.434;
-	fmt.Printf("The Name of the User %s and height %.2f with the age is %d \n ",name,height,age)
+func divide(a,b float64) float64 {
+	return a / b;
 }
+
+func main(){
+	fmt.Println("Error Handling in Go");
+	data := divide(10,5)
+	fmt.Println("data : ",data);
+
+}
+
+// How to Use Functions in GO
+
+// import "fmt"
+
+// func name(name string){
+// 	fmt.Println("Welcome Mr/Ms : ",name)
+// }
+
+// func add(a,b int) int{
+// 	// var c = a+b;
+// 	// fmt.Printf("The Addition of %d and %d is %d",a,b,c);
+// 	return a + b;
+// }
+
 // func main() {
-// 	var name string = "faizan alam";
-// 	var age int = 22;
-// 	// var exp int = "22";	// shows error - type error
+// 	fmt.Println("Welcome to Go programming")
+// 	name("faizan alam");
 
-// 	var isstudent bool = true;
+// 	// add(10,30)
+// 	var data = add(10,30)
+// 	fmt.Println("Add : ",data)
+// }
 
-// 	const pi = 3.14
-// 	fmt.Println(pi)
 
-// 	age1 := 23;
-// 	fmt.Println(age1)
-// 	fmt.Println("Hello", name,isstudent,age)
+
+// How to Take INput From Users
+
+// import (
+// 	"bufio"
+// 	"fmt"
+// 	"os"
+// )
+
+// func main() {
+// 	fmt.Println("Taking Input from User")
+// 	fmt.Print("Enter Your Name : ");
+
+// 	// for single letter
+// 	// var name string;
+// 	// fmt.Scan(&name)
+// 	// fmt.Println("Hello Mr/Ms : ",name)
+// 	// fmt.Printf("Hello Mr/Ms : %s ",name)
+
+// 	// for multiple letter
+// 	reader := bufio.NewReader(os.Stdin)
+// 	name, _ := reader.ReadString('\n')
+// 	fmt.Println("Hello Mr: ",name)
 // }

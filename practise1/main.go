@@ -1,19 +1,93 @@
 package main
 
-// Error Handling in Go
+// If Else Condition 
 import "fmt"
 
-func divide(a,b float64) float64 {
-	return a / b;
-}
-
 func main(){
-	fmt.Println("Error Handling in Go");
-	data := divide(10,5)
-	fmt.Println("data : ",data);
+	fmt.Println("If Else Condition in GO Lang")
+	x := 10
+	// if x == 0{
+	// 	fmt.Println("The Value of X is  : ",x)
+	// }
+
+	if x > 20{
+		fmt.Println("X Value si Greater than 20")
+	} else if x > 5{
+		fmt.Println("X value is greater than 5")
+	} else{
+		fmt.Println("X Value is Smaller than 5")
+	}
 
 }
 
+// Arrays in Go Lang
+// import "fmt"
+
+// func main(){
+// 	fmt.Println("Arrays in Go Lang")
+
+// 	var names[5] string
+// 	names[0] = "faizan"
+// 	names[2] = "salman"
+// 	names[4] = "maroof"
+// 	names[1] = "shifa"
+// 	fmt.Println("Names of Friends ",names)
+
+
+
+// 	var numbers = [5]int{1,2,3,4,5}
+// 	fmt.Println("Numbers are : ",numbers)
+
+// 	fmt.Println("length of An Array : ",len(numbers))
+
+// 	fmt.Println("Value of Name at 2nd Index : ",names[2])
+
+
+
+
+// 	// var prices[5]int
+// 	var prices[5]string
+// 	prices[0] = "example"
+// 	fmt.Println("Prices are : ",prices)			// what is shown in empty array with int and string
+// 	fmt.Printf("Prices are %q",prices)
+// }
+
+// ################################################################################################
+// Arrays in Go Lang
+
+// ################################################################################################
+// Error Handling in Go
+// import "fmt"
+
+// // func divide(a,b float64) (float64, error) {
+// // 	if(b == 0){
+// // 		return 0, fmt.Errorf("Dominator must not be Zero")
+// // 	}
+// // 	return a / b, nil
+// // }
+// func divide(a,b float64) (float64, string) {
+// 	if(b == 0){
+// 		return 0, "Dominator must not be Zero"
+// 	}
+// 	return a / b, ""
+// }
+
+// func main(){
+// 	fmt.Println("Error Handling in Go");
+// 	// data := divide(10,5)
+
+// 	// data, err := divide(10,5)
+// 	// if(err != nil){
+// 	// 	fmt.Println("Error Handling");
+// 	// }
+// 	// fmt.Println("data : ",data);
+
+// 	data, _ := divide(10,5)
+// 	fmt.Println("data : ",data);
+
+// }
+
+// ################################################################################################
 // How to Use Functions in GO
 
 // import "fmt"
@@ -39,6 +113,7 @@ func main(){
 
 
 
+// ################################################################################################
 // How to Take INput From Users
 
 // import (

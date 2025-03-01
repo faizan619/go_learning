@@ -1,9 +1,36 @@
 package main
 
+// Maps in Go Lang
+import "fmt"
+
+func main(){
+	fmt.Println("Maps in Go Lang")
+
+	studentGrades := make(map[string]int)
+	studentGrades["Faizan"] = 98
+	studentGrades["maroof"] = 92
+	studentGrades["Salman"] = 95
+	studentGrades["Shifa"] = 99
+
+	fmt.Println("Marks of Salman : ",studentGrades["Salman"])
+	studentGrades["Salman"] = 100
+	fmt.Println("Marks of Salman : ",studentGrades["Salman"])
+	delete(studentGrades,"Salman")
+	fmt.Println("Marks of Salman : ",studentGrades["Salman"])
+
+	grades, exists := studentGrades["Zubiya"]
+	fmt.Println("Grades of Zubiya : ",grades)
+	fmt.Println("Does Zubiya Exists", exists)
+
+	for index, value := range studentGrades {
+		fmt.Printf("key is %s and Marks is %d\n",index, value)
+	}
+
+}
+
 
 
 // Loops in Go Lang
-
 // import "fmt"
 
 // func main(){

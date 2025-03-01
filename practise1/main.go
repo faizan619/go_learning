@@ -1,24 +1,172 @@
 package main
 
+
+
+// Loops in Go Lang
+
+// import "fmt"
+
+// func main(){
+// 	fmt.Println("Loops in Go lang")
+
+// 	// // Exmaple 1
+// 	// for i:=0;i<10;i++{
+// 	// 	fmt.Println("Loops I : ",i)
+// 	// }
+
+// 	// // Example 2
+// 	// counter := 1;
+// 	// for{
+// 	// 	fmt.Println("Looping ",counter)
+// 	// 	counter++
+// 	// 	if(counter > 10){
+// 	// 		break
+// 	// continue
+// 	// 	}
+// 	// }
+
+// 	// for{
+// 	// 	fmt.Println("Infinite Loop")
+// 	// }
+
+// 	// Exmaple 3
+// 	numbers := []int{5,6,4,3,7,8,2,1,9}
+// 	for index, value := range numbers {
+// 		fmt.Printf("Index : %d, Value : %d\n",index,value)
+// 	}
+
+// 	data := "Faizan alam"
+// 	for index, value := range data{
+// 		// fmt.Println(index, "-> Value : ",value)		// it giving something wierd
+// 		fmt.Printf("Index : %d, Value : %c\n",index,value)
+// 	}
+
+// }
+
+
+// Switch Case in Go Lang
+// import "fmt"
+
+// func main(){
+// 	fmt.Println("Switch Case in Go Lang")
+	
+// 	// example 1
+// 	day :=3
+// 	switch day {
+// 	case 1:
+// 		fmt.Println("Day is Monday")
+// 	case 2:
+// 		fmt.Println("Day is Monday")
+// 	case 3:
+// 		fmt.Println("Day is Monday")
+// 	case 4:
+// 		fmt.Println("Day is Monday")
+// 	default:
+// 		fmt.Println("Days are WeekEnds")
+// 	}
+
+// 	month := "January"
+// 	switch month {
+// 	case "January":
+// 		fmt.Println("New year Celebration")
+// 	case "February":
+// 		fmt.Println("28 Days Celebreation")
+// 	case "March":
+// 		fmt.Println("It is March")
+// 	default:
+// 		fmt.Println("It is not jan, feb, march Month")
+// 	}
+
+// 	number := 7
+// 	switch number {
+// 	case 3,5,7,9:
+// 		fmt.Println("This are Odd Numbers")
+// 	case 2,4,6,8:
+// 		fmt.Println("This are Even Numbers")
+// 	}
+
+// 	var temp = 34
+// 	switch {
+// 	case temp < 30:
+// 		fmt.Println("Temperature is less than 30")
+// 	case temp >30 && temp < 45:
+// 		fmt.Println("Temperature is Managable")
+// 	case temp>45:
+// 		fmt.Println("It is Sooo Hot")
+
+// 	}
+// }
+
+
 // If Else Condition 
-import "fmt"
+// import "fmt"
 
-func main(){
-	fmt.Println("If Else Condition in GO Lang")
-	x := 10
-	// if x == 0{
-	// 	fmt.Println("The Value of X is  : ",x)
-	// }
+// func main(){
+// 	fmt.Println("If Else Condition in GO Lang")
+// 	x := 10
+// 	// if x == 0{
+// 	// 	fmt.Println("The Value of X is  : ",x)
+// 	// }
 
-	if x > 20{
-		fmt.Println("X Value si Greater than 20")
-	} else if x > 5{
-		fmt.Println("X value is greater than 5")
-	} else{
-		fmt.Println("X Value is Smaller than 5")
-	}
+// 	if x > 20{
+// 		fmt.Println("X Value si Greater than 20")
+// 	} else if x > 5{
+// 		fmt.Println("X value is greater than 5")
+// 	} else{
+// 		fmt.Println("X Value is Smaller than 5")
+// 	}
 
-}
+// }
+
+
+
+// Slices in Go Lang
+
+// import "fmt"
+
+// func main(){
+// 	fmt.Println("Slices in Go Lang")
+
+// 	// declare and initialize a slice
+// 	// number := []int {1,2,3,4}
+
+// 	// fmt.Println("Slice : ",number)
+// 	// fmt.Println("Length : ",len(number))
+// 	// fmt.Println("Capacity : ",cap(number))
+
+
+
+// 	// fmt.Println("Slices : ",number)
+// 	// fmt.Println("Len Of the Slices : ",len(number))
+// 	// number = append(number, 11,22,33,44,55,66,77,88,99)
+
+// 	// fmt.Println("Slices : ",number)
+// 	// fmt.Println("Len Of the Slices : ",len(number))
+// 	// fmt.Printf("Number has Data Type : %T\n",number)
+
+// 	// names := []string{"faizan","sajjad","salman","maroof","shifa"}
+// 	// fmt.Println("Names are : ",names)
+
+
+
+// 	// slice - len and capacity
+// 	numbers := make([]int, 3, 5)
+// 	numbers = append(numbers, 22)
+// 	numbers = append(numbers, 98)
+// 	// numbers = append(numbers, 9)
+// 	fmt.Println("Slice : ",numbers)
+// 	fmt.Println("Length : ",len(numbers))
+// 	fmt.Println("Capacity : ",cap(numbers))
+	
+// 	stock := make([]int, 0)
+// 	stock = append(stock, 5)
+// 	fmt.Println("Slice : ",stock)
+// 	fmt.Println("Length : ",len(stock))
+// 	fmt.Println("Capacity : ",cap(stock))
+
+// }
+
+
 
 // Arrays in Go Lang
 // import "fmt"

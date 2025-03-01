@@ -3,7 +3,7 @@ package main
 // Maps in Go Lang
 import "fmt"
 
-func main(){
+func main() {
 	fmt.Println("Maps in Go Lang")
 
 	studentGrades := make(map[string]int)
@@ -12,23 +12,31 @@ func main(){
 	studentGrades["Salman"] = 95
 	studentGrades["Shifa"] = 99
 
-	fmt.Println("Marks of Salman : ",studentGrades["Salman"])
+	fmt.Println("Marks of Salman : ", studentGrades["Salman"])
 	studentGrades["Salman"] = 100
-	fmt.Println("Marks of Salman : ",studentGrades["Salman"])
-	delete(studentGrades,"Salman")
-	fmt.Println("Marks of Salman : ",studentGrades["Salman"])
+	fmt.Println("Marks of Salman : ", studentGrades["Salman"])
+	delete(studentGrades, "Salman")
+	fmt.Println("Marks of Salman : ", studentGrades["Salman"])
 
 	grades, exists := studentGrades["Zubiya"]
-	fmt.Println("Grades of Zubiya : ",grades)
+	fmt.Println("Grades of Zubiya : ", grades)
 	fmt.Println("Does Zubiya Exists", exists)
 
 	for index, value := range studentGrades {
-		fmt.Printf("key is %s and Marks is %d\n",index, value)
+		fmt.Printf("key is %s and Marks is %d\n", index, value)
 	}
 
+	childGrades := map[string]int{
+		"Faizan": 99,
+		"Salman": 95,
+		"Maroof": 55,
+		"Shifa":  89,
+	}
+
+	for index, value := range childGrades {
+		fmt.Printf("----------key is %s and Marks is %d\n", index, value)
+	}
 }
-
-
 
 // Loops in Go Lang
 // import "fmt"
@@ -70,13 +78,12 @@ func main(){
 
 // }
 
-
 // Switch Case in Go Lang
 // import "fmt"
 
 // func main(){
 // 	fmt.Println("Switch Case in Go Lang")
-	
+
 // 	// example 1
 // 	day :=3
 // 	switch day {
@@ -124,8 +131,7 @@ func main(){
 // 	}
 // }
 
-
-// If Else Condition 
+// If Else Condition
 // import "fmt"
 
 // func main(){
@@ -145,8 +151,6 @@ func main(){
 
 // }
 
-
-
 // Slices in Go Lang
 
 // import "fmt"
@@ -161,8 +165,6 @@ func main(){
 // 	// fmt.Println("Length : ",len(number))
 // 	// fmt.Println("Capacity : ",cap(number))
 
-
-
 // 	// fmt.Println("Slices : ",number)
 // 	// fmt.Println("Len Of the Slices : ",len(number))
 // 	// number = append(number, 11,22,33,44,55,66,77,88,99)
@@ -174,8 +176,6 @@ func main(){
 // 	// names := []string{"faizan","sajjad","salman","maroof","shifa"}
 // 	// fmt.Println("Names are : ",names)
 
-
-
 // 	// slice - len and capacity
 // 	numbers := make([]int, 3, 5)
 // 	numbers = append(numbers, 22)
@@ -184,7 +184,7 @@ func main(){
 // 	fmt.Println("Slice : ",numbers)
 // 	fmt.Println("Length : ",len(numbers))
 // 	fmt.Println("Capacity : ",cap(numbers))
-	
+
 // 	stock := make([]int, 0)
 // 	stock = append(stock, 5)
 // 	fmt.Println("Slice : ",stock)
@@ -192,8 +192,6 @@ func main(){
 // 	fmt.Println("Capacity : ",cap(stock))
 
 // }
-
-
 
 // Arrays in Go Lang
 // import "fmt"
@@ -208,17 +206,12 @@ func main(){
 // 	names[1] = "shifa"
 // 	fmt.Println("Names of Friends ",names)
 
-
-
 // 	var numbers = [5]int{1,2,3,4,5}
 // 	fmt.Println("Numbers are : ",numbers)
 
 // 	fmt.Println("length of An Array : ",len(numbers))
 
 // 	fmt.Println("Value of Name at 2nd Index : ",names[2])
-
-
-
 
 // 	// var prices[5]int
 // 	var prices[5]string
@@ -285,8 +278,6 @@ func main(){
 // 	var data = add(10,30)
 // 	fmt.Println("Add : ",data)
 // }
-
-
 
 // ################################################################################################
 // How to Take INput From Users

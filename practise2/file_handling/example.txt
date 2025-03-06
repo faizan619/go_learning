@@ -1,0 +1,2 @@
+Hello, this is the middle Content
+and this is manualy edited file

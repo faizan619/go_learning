@@ -6,7 +6,7 @@ import (
 	"rsc.io/quote"
 )
 
-func Hello1(name string, age int) string {
+func Hello1(name string, age int) string { 
 	// message := fmt.Sprintf("Hello Mr/Ms :  %v. with age %d",name,age)
 	message := fmt.Sprintf("Hello Mr/Ms :  %s. with age %d", name, age)
 	return message

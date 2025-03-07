@@ -7,7 +7,7 @@ func main(){
 	var age int = 22;
 	var height = 5.434;
 	fmt.Printf("The Name of the User %s and height %.2f with the age is %d \n ",name,height,age)
-}
+} 
 // func main() {
 // 	var name string = "faizan alam";
 // 	var age int = 22;

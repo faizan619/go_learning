@@ -98,7 +98,7 @@ func main() {
 // 	case 3:
 // 		fmt.Println("Day is Monday")
 // 	case 4:
-// 		fmt.Println("Day is Monday")
+// 		fmt.Println("Day is Monday")l	
 // 	default:
 // 		fmt.Println("Days are WeekEnds")
 // 	}

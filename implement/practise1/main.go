@@ -1,27 +1,34 @@
+// Package to be Seeing
+// 1) Stirngs
+// 2) Time
+// 3) strconv
+// 4) See Video - https://www.youtube.com/watch?v=-x0QnooY6O8
+// 5)
+
 // ############################### Part 9 - Done #############################
-package main
+// package main
 
-import (
-	"fmt"
-	"strconv"
-)
+// import (
+// 	"fmt"
+// 	"strconv"
+// )
 
-func main(){
-	fmt.Println("String Conversion in Go Lang")
-	var num int = 42
-	fmt.Println("Number : ",num)
-	fmt.Printf("The Data Type of Num is : %T\n ",num)
+// func main(){
+// 	fmt.Println("String Conversion in Go Lang")
+// 	var num int = 42
+// 	fmt.Println("Number : ",num)
+// 	fmt.Printf("The Data Type of Num is : %T\n ",num)
 	
-	str := strconv.Itoa(num)
-	fmt.Println("Number Converted : ",str)
-	fmt.Printf("The Data Type of Num is : %T\n ",str)
+// 	str := strconv.Itoa(num)
+// 	fmt.Println("Number Converted : ",str)
+// 	fmt.Printf("The Data Type of Num is : %T\n ",str)
 	
-	num1 := "53"
-	flot,_ := strconv.ParseFloat(num1,64)
-	fmt.Println("Number Converted : ",flot)
-	fmt.Printf("The Data Type of Num is : %T\n ",flot)
+// 	num1 := "53"
+// 	flot,_ := strconv.ParseFloat(num1,64)
+// 	fmt.Println("Number Converted : ",flot)
+// 	fmt.Printf("The Data Type of Num is : %T\n ",flot)
 
-}
+// }
 // ############################### Part 8 - Done #############################
 // package main
 

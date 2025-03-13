@@ -27,6 +27,6 @@ func main() {
 	fmt.Printf("The age is : %d \n",age)
 	fmt.Printf("The Marks Type : %T \n",marks)
 	fmt.Printf("The Marks Value : %f \n",marks)
-	fmt.Printf("The Marks Value[2] : %.2f \n",marks)s
+	fmt.Printf("The Marks Value[2] : %.2f \n",marks)
 	
 }

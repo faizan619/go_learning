@@ -2,23 +2,71 @@ package main
 
 import "fmt"
 
-func main() {
-	fmt.Println("Arrays")
-	arr1 := [3]int{1, 3, 5}
-	fmt.Println(arr1)
-	arr2 := arr1
-	fmt.Println(arr2)
-	var arr3 = [len(arr1)]int{}
-	fmt.Println("Before : ",arr3)
-	for i:=0;i<len(arr1);i++{
-		arr3[i] = arr1[i]
-	}
-	fmt.Println("After : ",arr3)
-	
-	// for i:=0;i<len(arr1);i++{
-	// 	fmt.Println(" Array ",i,": ",arr1[i])
-	// }
+func hello(){
+	fmt.Println("This is Hello")
 }
+
+func main() {
+	var day int;
+	fmt.Println("Switch Case")
+	fmt.Printf("Enter Day Number : ")
+	fmt.Scan(&day)
+	defer fmt.Println("End")
+	defer hello()
+	switch day {
+	case 1:
+		fmt.Println("Its First Day")
+	case 2:
+		fmt.Println("Its Second Day")
+	case 3:
+		fmt.Println("Its Third Day")
+	case 4:
+		fmt.Println("Its Forth Day")
+	case 5:
+		fmt.Println("Its Fifth Day")
+	case 6:
+		fmt.Println("Its Sixth Day")
+	case 7:
+		fmt.Println("Its Seventh Day")
+	default:
+		fmt.Println("Invalid Day")
+	}
+}
+
+// import "fmt"
+
+// func averageCount(arr [6]int){
+// 	fmt.Println(arr)
+// 	for _, val := range arr{
+// 		fmt.Println("Value : ",val)
+// 	}
+// }
+
+// func main() {
+// 	fmt.Println("Passing Array in Function!")
+// 	data := [6]int{2,4,6,8,10,12}
+// 	averageCount(data)
+// }
+
+// import "fmt"
+
+// func main() {
+// 	fmt.Println("Arrays")
+// 	arr1 := [3]int{1, 3, 5}
+// 	fmt.Println(arr1)
+// 	arr2 := arr1
+// 	fmt.Println(arr2)
+// 	var arr3 = [len(arr1)]int{}
+// 	fmt.Println("Before : ",arr3)
+// 	for i:=0;i<len(arr1);i++{
+// 		arr3[i] = arr1[i]
+// 	}
+// 	fmt.Println("After : ",arr3)
+
+// for i:=0;i<len(arr1);i++{
+// 	fmt.Println(" Array ",i,": ",arr1[i])
+// }
+// }
 
 // import(
 // 	"fmt"

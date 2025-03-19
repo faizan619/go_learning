@@ -1,21 +1,49 @@
-package main
+// Practise on 19 March 2025
+package main 
 
 import "fmt"
 
-func main() {
-	fmt.Println("Loop in Go lang")
-	var num int;
-	for{
-		fmt.Printf("Enter Number (press 0 to Exit) : ")
-		fmt.Scan(&num)
-		fmt.Println("Number : ",num);
-		if(num==0){
-			break
-		}
+func main(){
+	fmt.Println("Maps in Go Lang")
+
+	studentNames := make(map[int]string)
+	studentNames[22] = "Faizan alam"
+	studentNames[24] = "Mulla Shifa"
+	studentNames[21] = "Salman Sayyed"
+	studentNames[23] = "Maroof Baig"
+	fmt.Println(studentNames[22])
+
+	name,exists := studentNames[22]
+	fmt.Println("Name of Student : ",name," Does Student Exists : ",exists)
+
+	friendsNames := map[int]string{
+		1:"faizan",
+		2:"alam",
+		3:"sajjad",
+		4:"Alm",
 	}
+	fmt.Println(friendsNames)
 }
 
 // Practise on 18 March 2025
+
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	fmt.Println("Loop in Go lang")
+// 	var num int;
+// 	for{
+// 		fmt.Printf("Enter Number (press 0 to Exit) : ")
+// 		fmt.Scan(&num)
+// 		fmt.Println("Number : ",num);
+// 		if(num==0){
+// 			break
+// 		}
+// 	}
+// }
+
 // package main
 
 // import (

@@ -1,29 +1,75 @@
-// Practise on 19 March 2025
-package main 
+// Practise on 20 March 2025
+package main
 
 import "fmt"
 
 func main(){
-	fmt.Println("Maps in Go Lang")
+	fmt.Println("Slices in Go Lang")
+	arr1 := []int{2,4,6,8,10,12,14,16,18,20}
+	arrSlice := arr1[2:5]
+	fmt.Println("Arr1 : ",arr1)
+	fmt.Println("Arr1 Len : ",len(arr1))
+	fmt.Println("Arr1 Cap : ",cap(arr1))
+	fmt.Println("Arr Slice : ",arrSlice)
+	fmt.Println("Arr Slice Len : ",len(arrSlice))
+	fmt.Println("Arr Slice Cap : ",cap(arrSlice))
 
-	studentNames := make(map[int]string)
-	studentNames[22] = "Faizan alam"
-	studentNames[24] = "Mulla Shifa"
-	studentNames[21] = "Salman Sayyed"
-	studentNames[23] = "Maroof Baig"
-	fmt.Println(studentNames[22])
+	arr2 := make([] int, 0, 5)
+	arr2 = append(arr2, 5,5,6,7,8,9)
+	fmt.Println("Arr 2 :",arr2)
+	fmt.Println("Arr 2 Len :",len(arr2))
+	fmt.Println("Arr 2 Cap :",cap(arr2))
 
-	name,exists := studentNames[22]
-	fmt.Println("Name of Student : ",name," Does Student Exists : ",exists)
-
-	friendsNames := map[int]string{
-		1:"faizan",
-		2:"alam",
-		3:"sajjad",
-		4:"Alm",
-	}
-	fmt.Println(friendsNames)
 }
+
+
+
+// package main
+
+// import "fmt"
+
+// type Person struct {
+// 	name  string
+// 	age   int
+// 	hobby string
+// }
+
+// func main() {
+// 	fmt.Println("Struct and Slices in Go lang")
+// 	person1 := Person{"faizan alam",22,"Coding and Travelling"}
+// 	fmt.Println(person1)
+// 	person2 := Person{name:"Salman",hobby:"Not mention"}
+// 	fmt.Println(person2)
+
+
+// }
+
+// Practise on 19 March 2025
+// package main
+
+// import "fmt"
+
+// func main(){
+// 	fmt.Println("Maps in Go Lang")
+
+// 	studentNames := make(map[int]string)
+// 	studentNames[22] = "Faizan alam"
+// 	studentNames[24] = "Mulla Shifa"
+// 	studentNames[21] = "Salman Sayyed"
+// 	studentNames[23] = "Maroof Baig"
+// 	fmt.Println(studentNames[22])
+
+// 	name,exists := studentNames[22]
+// 	fmt.Println("Name of Student : ",name," Does Student Exists : ",exists)
+
+// 	friendsNames := map[int]string{
+// 		1:"faizan",
+// 		2:"alam",
+// 		3:"sajjad",
+// 		4:"Alm",
+// 	}
+// 	fmt.Println(friendsNames)
+// }
 
 // Practise on 18 March 2025
 

@@ -1,26 +1,43 @@
 // Practise on 20 March 2025
+
 package main
 
 import "fmt"
 
 func main(){
-	fmt.Println("Slices in Go Lang")
-	arr1 := []int{2,4,6,8,10,12,14,16,18,20}
-	arrSlice := arr1[2:5]
-	fmt.Println("Arr1 : ",arr1)
-	fmt.Println("Arr1 Len : ",len(arr1))
-	fmt.Println("Arr1 Cap : ",cap(arr1))
-	fmt.Println("Arr Slice : ",arrSlice)
-	fmt.Println("Arr Slice Len : ",len(arrSlice))
-	fmt.Println("Arr Slice Cap : ",cap(arrSlice))
+	fmt.Println("Pointer on Go Lang")
+	a1 := "faizan"
 
-	arr2 := make([] int, 0, 5)
-	arr2 = append(arr2, 5,5,6,7,8,9)
-	fmt.Println("Arr 2 :",arr2)
-	fmt.Println("Arr 2 Len :",len(arr2))
-	fmt.Println("Arr 2 Cap :",cap(arr2))
-
+	var a2 *string;
+	a2 = &a1
+	fmt.Println("Value of A2 : ",a2)
+	fmt.Println("Address of A2 : ",&a2)
+	fmt.Println("Reference of A2 : ",*a2)
 }
+
+
+// package main
+
+// import "fmt"
+
+// func main(){
+// 	fmt.Println("Slices in Go Lang")
+// 	arr1 := []int{2,4,6,8,10,12,14,16,18,20}
+// 	arrSlice := arr1[2:5]
+// 	fmt.Println("Arr1 : ",arr1)
+// 	fmt.Println("Arr1 Len : ",len(arr1))
+// 	fmt.Println("Arr1 Cap : ",cap(arr1))
+// 	fmt.Println("Arr Slice : ",arrSlice)
+// 	fmt.Println("Arr Slice Len : ",len(arrSlice))
+// 	fmt.Println("Arr Slice Cap : ",cap(arrSlice))
+
+// 	arr2 := make([] int, 0, 5)
+// 	arr2 = append(arr2, 5,5,6,7,8,9)
+// 	fmt.Println("Arr 2 :",arr2)
+// 	fmt.Println("Arr 2 Len :",len(arr2))
+// 	fmt.Println("Arr 2 Cap :",cap(arr2))
+
+// }
 
 
 

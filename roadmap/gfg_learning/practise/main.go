@@ -1,19 +1,70 @@
-// Practise on 20 March 2025
+// Practise on 21 March 2025
 
 package main
 
 import "fmt"
 
 func main(){
-	fmt.Println("Pointer on Go Lang")
-	a1 := "faizan"
-
-	var a2 *string;
-	a2 = &a1
-	fmt.Println("Value of A2 : ",a2)
-	fmt.Println("Address of A2 : ",&a2)
-	fmt.Println("Reference of A2 : ",*a2)
+	fmt.Println("Maps in Go Lang")
+	arr1 := map[int]string{
+		1:"suja",
+		2: "aneeza",
+		3:"saima",
+		24:"faizan",
+		25:"giridhar",
+		26:"wase",
+	}
+	fmt.Println("Array 1 : ",arr1[1])
+	for ind,val := range arr1{
+		fmt.Println(ind,"Value : ",val)
+	}
 }
+// package main
+
+// import (
+// 	"fmt"
+// 	"strconv"
+// )
+
+// func main(){
+// 	fmt.Println("Data Conversion in Go Lang")
+
+// 	str1 := "432"
+// 	fmt.Println("============== Default Value ==================")
+// 	fmt.Println("Value of Str1 : ",str1)
+// 	fmt.Printf("Type of Str1 : %T\n ",str1)
+// 	fmt.Println("============== Convert to int ==================")
+// 	str1A,_ := strconv.Atoi(str1)
+// 	fmt.Println("Value of Str1A : ",str1A)
+// 	fmt.Printf("Type of Str1A : %T\n",str1A)
+// 	fmt.Println("============== Convert to String Again ==================")
+// 	str1B := strconv.Itoa(str1A)
+// 	fmt.Println("Value of Str1B : ",str1B)
+// 	fmt.Printf("Type of Str1B : %T\n",str1B)
+// 	str1C,_ := strconv.ParseFloat(str1B,64)
+// 	str1C = str1C+4.34
+// 	fmt.Println("Value of Str1C : ",str1C)
+// 	fmt.Printf("Type of Str1C : %T\n ",str1C)
+
+
+// }
+
+// Practise on 20 March 2025
+
+// package main
+
+// import "fmt"
+
+// func main(){
+// 	fmt.Println("Pointer on Go Lang")
+// 	a1 := "faizan"
+
+// 	var a2 *string;
+// 	a2 = &a1
+// 	fmt.Println("Value of A2 : ",a2)
+// 	fmt.Println("Address of A2 : ",&a2)
+// 	fmt.Println("Reference of A2 : ",*a2)
+// }
 
 
 // package main

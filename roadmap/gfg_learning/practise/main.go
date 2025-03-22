@@ -1,25 +1,33 @@
-// Practise on 21 March 2025
-
+// Practise on 22 March 2025
 package main
 
 import "fmt"
 
 func main(){
-	fmt.Println("Maps in Go Lang")
-	arr1 := map[int]string{
-		1:"suja",
-		2: "aneeza",
-		3:"saima",
-		24:"faizan",
-		25:"giridhar",
-		26:"wase",
-	}
-	fmt.Println("Array 1 : ",arr1[1])
-	for ind,val := range arr1{
-		fmt.Println(ind,"Value : ",val)
-	}
+	fmt.Println("Go Lang Programming")
 }
+// Practise on 21 March 2025
+
 // package main
+
+// import "fmt"
+
+// func main(){
+// 	fmt.Println("Maps in Go Lang")
+// 	arr1 := map[int]string{
+// 		1:"suja",
+// 		2: "aneeza",
+// 		3:"saima",
+// 		24:"faizan",
+// 		25:"giridhar",
+// 		26:"wase",
+// 	}
+// 	fmt.Println("Array 1 : ",arr1[1])
+// 	for ind,val := range arr1{
+// 		fmt.Println(ind,"Value : ",val)
+// 	}
+// }
+// // package main
 
 // import (
 // 	"fmt"

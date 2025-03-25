@@ -3,30 +3,46 @@ package main
 
 import (
 	"fmt"
-	"io"
 	"os"
 )
 
-func main() {
-	fmt.Println("File Handling in Go Lang")
-
-	file, err := os.Create("example1.txt")
+func main(){
+	fmt.Println("Reading File in Go lang")
+	data,err := os.ReadFile("example1.txt")
 	if err != nil{
-		fmt.Println("Error while creating the file : ",err)
+		fmt.Println("Error While Reading the File : ",err)
 		return
 	}
+	fmt.Println("Data : ",string(data))
+}
+// package main
+
+// import (
+// 	"fmt"
+// 	"io"
+// 	"os"
+// )
+
+// func main() {
+// 	fmt.Println("File Handling in Go Lang")
+
+// 	file, err := os.Create("example1.txt")
+// 	if err != nil{
+// 		fmt.Println("Error while creating the file : ",err)
+// 		return
+// 	}
 
 	
-	defer file.Close()
+// 	defer file.Close()
 
-	content := "This is Faizan Alam of DeltaSoft Systems";
-	_, err1 := io.WriteString(file,content+"\n")
-	if err1 != nil{
-		fmt.Println("Error while Writing the file : ",err)
-		return
-	}
-	fmt.Println("Content is Written Successfully")
-}
+// 	content := "This is Faizan Alam of DeltaSoft Systems";
+// 	_, err1 := io.WriteString(file,content+"\n")
+// 	if err1 != nil{
+// 		fmt.Println("Error while Writing the file : ",err)
+// 		return
+// 	}
+// 	fmt.Println("Content is Written Successfully")
+// }
 
 // package main
 

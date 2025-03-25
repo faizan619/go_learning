@@ -6,15 +6,24 @@ import (
 	"os"
 )
 
-func main(){
+func main() {
 	fmt.Println("Reading File in Go lang")
-	data,err := os.ReadFile("example1.txt")
-	if err != nil{
-		fmt.Println("Error While Reading the File : ",err)
+	file, err := os.Open("example1.txt")
+	if err != nil {
+		fmt.Println("Error While Reading the File : ", err)
 		return
 	}
-	fmt.Println("Data : ",string(data))
+	// fmt.Println("Data : ", string(file))
+
+	data1 := "deltasoft garden"
+	_, err1 := file.WriteString(data1)
+	if err1 != nil {
+		fmt.Println("Error While Reading the File : ", err1)
+		return
+	}
+	fmt.Println("Done With Writing the Content")
 }
+
 // package main
 
 // import (
@@ -32,7 +41,6 @@ func main(){
 // 		return
 // 	}
 
-	
 // 	defer file.Close()
 
 // 	content := "This is Faizan Alam of DeltaSoft Systems";

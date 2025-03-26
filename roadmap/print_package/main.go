@@ -1,28 +1,28 @@
 // file handling
-package main
+// package main
 
-import (
-	"fmt"
-	"os"
-)
+// import (
+// 	"fmt"
+// 	"os"
+// )
 
-func main() {
-	fmt.Println("Reading File in Go lang")
-	file, err := os.Open("example1.txt")
-	if err != nil {
-		fmt.Println("Error While Reading the File : ", err)
-		return
-	}
-	// fmt.Println("Data : ", string(file))
+// func main() {
+// 	fmt.Println("Reading File in Go lang")
+// 	file, err := os.Open("example1.txt")
+// 	if err != nil {
+// 		fmt.Println("Error While Reading the File : ", err)
+// 		return
+// 	}
+// 	// fmt.Println("Data : ", string(file))
 
-	data1 := "deltasoft garden"
-	_, err1 := file.WriteString(data1)
-	if err1 != nil {
-		fmt.Println("Error While Reading the File : ", err1)
-		return
-	}
-	fmt.Println("Done With Writing the Content")
-}
+// 	data1 := "deltasoft garden"
+// 	_, err1 := file.WriteString(data1)
+// 	if err1 != nil {
+// 		fmt.Println("Error While Reading the File : ", err1)
+// 		return
+// 	}
+// 	fmt.Println("Done With Writing the Content")
+// }
 
 // package main
 
